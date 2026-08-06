@@ -31,8 +31,11 @@
       <h1>What happens when a solution exists, but computation reaches its limit?</h1>
       <p class="lead narrow-copy">
         My research sits where analysis, computation, and partial differential
-        equations meet. I am interested in what information is needed to determine
-        the size of a solution — and what happens when that information is absent.
+        equations meet. Generally speaking, a pure mathematician is interested in the minimum number of assumptions on the initial data of a PDE to have a unique solution that 
+        only changed slightly if the boundary conditions change slightly. This is known as well-posedness. An applied mathematician is interested in getting an algorithm to 
+        approximate a solution to a PDE and, in order to get a faster algorithm, will make larger assumptions on the data. For example, to solve the heat equation, there may 
+        be an assumpton on the boundedness of the third derivative of the solution - even though the equation is only a second order one. This is known heuristically but the question
+        is whether it is necessary in order to actually compute the solution.
       </p>
     </section>
 
@@ -43,21 +46,17 @@
       </div>
 
       <div class="prose-stack">
-        <p class="large-copy">
-          The starting point is a practical one: which assumptions on the initial
-          data make the size of a solution computable?
-        </p>
+  
         <p>
-          When those assumptions are absent, familiar ideas can give way to
-          uncertainty principles. My work examines where these boundaries lie and
-          how they change across different classes of equations.
+          When higher assumptions on regularity than necessary for existence are not present, uncertainty principles can form about the location of the solution.
+          This is how we can embed a halting problem in order to show undecidability of the norm of the solution.
         </p>
 
         <div class="topic-grid">
           <article class="topic-card">
             <span>01</span>
             <h3>Hyperbolic PDEs</h3>
-            <p>Adapting computability methods to equations that describe wave-like propagation.</p>
+            <p>Thhis was born out of the wave equation,</p>
           </article>
           <article class="topic-card">
             <span>02</span>
@@ -76,7 +75,7 @@
     <section class="section dark-section">
       <div class="shell research-layout">
         <div class="section-heading sticky-heading">
-          <p class="eyebrow light-eyebrow">A second direction</p>
+          <p class="eyebrow light-eyebrow">Other Research Interests</p>
           <h2>Dynamic Mode Decomposition</h2>
         </div>
 
@@ -90,17 +89,11 @@
             recover the evolution of data. This creates another meeting point between
             continuous mathematics and the discrete tools used to understand it.
           </p>
-
-          <aside class="question-box">
-            <p class="eyebrow light-eyebrow">Questions behind the work</p>
-            <ul>
-              <li>What information makes a solution computationally accessible?</li>
-              <li>What can still be known when that information is incomplete?</li>
-              <li>How can finite-difference approximations recover the evolution of data?</li>
-            </ul>
-          </aside>
         </div>
+        
       </div>
+
+    
     </section>
   </main>
 
