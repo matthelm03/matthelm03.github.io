@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Research interests of Matthew Helm: computability of PDEs and Dynamic Mode Decomposition.">
+  <meta name="description" content="Research interests of Matthew Helm: computability of PDEs and Lean.">
   <title>Research Interests | Matthew Helm</title>
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -20,7 +20,6 @@
       <nav class="site-nav" aria-label="Primary navigation">
         <a href="index.html">About Me</a>
         <a href="research.html" aria-current="page">Research Interests</a>
-        <a href="teaching.html">Teaching</a>
       </nav>
     </div>
   </header>
@@ -28,10 +27,9 @@
   <main id="main-content">
     <section class="page-hero shell">
       <p class="eyebrow">Research Interests</p>
-      <h1>What happens when a solution exists, but computation reaches its limit?</h1>
+      <h1>Well-posed yet undecidable solutions to PDEs</h1>
       <p class="lead narrow-copy">
-        My research sits where analysis, computation, and partial differential
-        equations meet. Generally speaking, a pure mathematician is interested in the minimum number of assumptions on the initial data of a PDE to have a unique solution that 
+        My research sits somewhere between Analysis and Computability Theory. Generally speaking, a pure mathematician is interested in the minimum number of assumptions on the initial data of a PDE to have a unique solution that 
         only changed slightly if the boundary conditions change slightly. This is known as well-posedness. An applied mathematician is interested in getting an algorithm to 
         approximate a solution to a PDE and, in order to get a faster algorithm, will make larger assumptions on the data. For example, to solve the heat equation, there may 
         be an assumpton on the boundedness of the third derivative of the solution - even though the equation is only a second order one. This is known heuristically but the question
@@ -44,24 +42,11 @@
       <div class="shell research-layout">
         <div class="section-heading sticky-heading">
           <p class="eyebrow light-eyebrow">Other Research Interests</p>
-          <h2>Dynamic Mode Decomposition</h2>
-        </div>
-
-        <div class="prose-stack">
-          <p class="large-copy">
-            I am also interested in variations of Dynamic Mode Decomposition for
-            continuous-time dynamical systems.
-          </p>
-          <p>
-            In this setting, we usually have access to snapshots of a physical system, but not exact derivatives of points in the system, or the equations that govern them.
-            The goal is to learn the dynamics of the system from the data and one of the first steps for this is to use finite-difference approximations to construct an approximation
-            to the Koopman Generator. Looking at the spectrum of this operator can reveal long-term features of the system, such as correlations between observables at different time points.
-          </p>
-        </div>
+  
         <h2>Lean</h2>
         <div class="prose-stack">
         <p class="large-copy">
-            I also recently became interested in the development of Lean for proof verification in Analysis. A goal of mine is to formalise my undecidability results in Lean.
+            I also recently became interested in the development of Lean for proof verification in Analysis. A goal of mine is to formalise my results in Lean.
           </p>
         </div>
       </div>
